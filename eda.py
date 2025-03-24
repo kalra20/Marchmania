@@ -1,3 +1,2 @@
 def eda()
-  return 
-pass
+  raiseError("Not implemented")
