@@ -1,2 +1,2 @@
 def empty():
-    pass
+    continue
