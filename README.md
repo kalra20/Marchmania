@@ -1,4 +1,5 @@
 # Marchmania
+
 Kaggel exercise
 
 Input Data:
@@ -25,6 +26,9 @@ Data Section 5 - Supplements
 
 This section contains additional supporting information, including coaches, conference affiliations, alternative team name spellings, bracket structure, and game results for NIT and other postseason tournaments.
 
+Regression to Classfication Problem?
+Regress on scores -> predict with classification
+
 EDA:
 
 - Understand underlying data
@@ -33,13 +37,11 @@ EDA:
 - Treat Missing data
 - Data Normalisation/Standardisation
 
-
-Model: 
+Model:
 
 Linear Regression - Baseline
 XGBoost Regression - Challengers
 Tree based Regression
-
 
 Feedback Loop => Important features => Improve hyperparameters
 
