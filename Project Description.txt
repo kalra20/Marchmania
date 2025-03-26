@@ -227,3 +227,4 @@ This file helps to represent the men's bracket structure in any given year. No m
     GameSlot - this is the game slot that the team would be playing in, during the given GameRound.
     EarlyDayNum, LateDayNum - these fields describe the earliest possible, and latest possible, DayNums that the game might be played on. Many tournament rounds span two days' time and so the expected day number for a game to be played on would be one of those two days.
 
+Need to get a better understanding.
