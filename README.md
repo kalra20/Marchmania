@@ -2,6 +2,8 @@
 
 Kaggel exercise
 
+**Regular Matches**
+
 Input Data:
 Read M data into dataframes, join data based on Team ID's.
 
@@ -10,40 +12,42 @@ The Basics
 
 This section provides everything you need to build a simple prediction model and submit predictions.
 
-Data Section 2 - Team Box Scores
+Features:
+Attack score
+Defensive score
+Home/Away Game
 
-This section provides game-by-game stats at a team level (free throws attempted, defensive rebounds, turnovers, etc.) for all regular season, conference tournament, and NCAA® tournament games since the 2003 season (men) or since the 2010 season (women).
+Data:
 
-Data Section 3 - Geography
+Team 1: Attack score | Defensive Score | Home/Away
+Team 2: Attack score | Defensive Score | Home/Away
 
-This section provides city locations of all regular season, conference tournament, and NCAA® tournament games since the 2010 season
+Attack score - real
+defensive score - real
+home/away/neutral - categorical - one hot encoding - 00, 01,10
 
-Data Section 4 - Public Rankings
+Concatenate: team 1 | Team 2
+Predict: Win/Loss  - 1/0
 
-This section provides weekly team rankings (men's teams only) for dozens of top rating systems - Pomeroy, Sagarin, RPI, ESPN, etc., since the 2003 season
+Dataset -> 
+1. Team1 | Team2 -> 1
+2. Team2 | Team1 -> 0
 
-Data Section 5 - Supplements
-
-This section contains additional supporting information, including coaches, conference affiliations, alternative team name spellings, bracket structure, and game results for NIT and other postseason tournaments.
-
-Regression to Classfication Problem?
-Regress on scores -> predict with classification
+Note: 
 
 EDA:
 
-- Understand underlying data
-- Think out possible features
 - Numerical, Categorical
-- Treat Missing data
 - Data Normalisation/Standardisation
 
+Risk: Data Leakage
+Make sure train data and test data are from different periods
+1985 - 2023
+2024 -> predict
 Model:
 
-Linear Regression - Baseline
-XGBoost Regression - Challengers
-Tree based Regression
+Logistic Regression
 
-Feedback Loop => Important features => Improve hyperparameters
 
 Evaluation:
 RMSE
